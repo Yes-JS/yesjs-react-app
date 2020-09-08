@@ -1,0 +1,8 @@
+@import '../../variables';
+
+.header {
+  // TODO Find a way for moving style to the Header.styles.ts
+  background-color: $header-background-color;
+  color: $header-color;
+  height: 48px;
+}

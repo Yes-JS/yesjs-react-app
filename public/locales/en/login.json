@@ -1,0 +1,13 @@
+{
+  "please_check_email": "Please check your email",
+  "activation_link": "The activation link is valid for 15 minutes.",
+  "all_attemps": "Sorry, you used all attemps",
+  "locked_for_30_minutes": "Your account is locked for 30 minutes",
+  "go_to_email": "go to email",
+  "resend_email": "re-send email",
+  "username": "Username",
+  "password": "Password",
+  "enter_username": "Enter username",
+  "enter_password": "Enter password",
+  "ok": "OK"
+}

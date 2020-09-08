@@ -1,0 +1,10 @@
+{
+  "buttons": {
+    "cancel": "Cancel",
+    "next": "Next",
+    "save": "Save",
+    "register": "Register",
+    "back": "Back",
+    "done": "Done"
+  }
+}

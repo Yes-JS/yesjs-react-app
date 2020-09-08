@@ -1,0 +1,45 @@
+{
+  "auto_accept": "Auto accept",
+  "balance": "Balance",
+  "bet": "Bet",
+  "bet_now": "BET NOW",
+  "bonus": "Bonus",
+  "cash_out": "Cash Out",
+  "direct_pay": "Direct Pay",
+  "events": "Events",
+  "fee": "Fee",
+  "manual_pay": "Manual Pay",
+  "max_odd": "Max Odd",
+  "max_payout": "Max Payout",
+  "open": "Open",
+  "register_cashon": "Register Cashon",
+  "support": "Support",
+  "system": "System",
+  "tipps": "tipps",
+  "wager": "Wager",
+  "status": {
+    "OPEN": "Open",
+    "CLOSED": "Closed",
+    "WON": "Won",
+    "CASHED_OUT": "Cashed out",
+    "CASH_OUT": "Cash out",
+    "CANCELED": "Canceled",
+    "LOST": "Lost"
+  },
+  "counters": {
+    "banker_plural": "{{count}} bankers",
+    "banker": "{{count}} banker",
+    "bet_plural": "{{count}} bets",
+    "bet": "{{count}} bet"
+  },
+  "bet_type": {
+    "SINGLE": "Single",
+    "COMBINATION": "Combi",
+    "SYSTEM": "System",
+    "BANKER_ONLY": "Banker only"
+  },
+  "system_fraction": "{{num}} of {{den}}",
+  "bp_balance": "BP balance",
+  "close_betslip": "Close Betslip",
+  "clear_betslip": "Clear Betslip"
+}

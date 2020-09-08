@@ -1,0 +1,58 @@
+{
+  "header": "Hello, ",
+  "close": "Close",
+  "personal_data": {
+    "header": "Edit personal data"
+  },
+  "email": {
+    "header": "Edit email",
+    "subheader": "Your email will be changed to",
+    "new_email": "New email",
+    "code": "Code",
+    "enter_code": "Enter code from email",
+    "enter_new_email": "Enter new email",
+    "repeat_email": "Repeat new email",
+    "enter_repeat_email": "Repeat your new email",
+    "password": "Password",
+    "enter_password": "Enter password"
+  },
+  "password": {
+    "label": "Password",
+    "header": "Edit password",
+    "current_password": "Current password",
+    "enter_password": "Enter password",
+    "new_password": "New password",
+    "enter_new": "Enter new password",
+    "repeat_new": "Repeat new password",
+    "enter_repeat": "Repeat your new password"
+  },
+  "securityQuestion": {
+    "header": "Security question",
+    "title": "Security options",
+    "answer": "Answer",
+    "enter_something": "Enter smth",
+    "question": "Question",
+    "select_security_question": "Select security question"
+  },
+  "updated_messages": {
+    "failed": {
+      "header": "The change request has been deleted",
+      "subheader": "The link remains relevant only 15 minutes after the request. Please try again."
+    },
+    "data": {
+      "header": "Personal data has been updated successfully"
+    },
+    "password": {
+      "header": "Password successfully changed",
+      "subheader": "Your password has been changed successfully. Please use your new password next time."
+    },
+    "email": {
+      "header": "Email successfully changed"
+    },
+    "security": {
+      "header": "Personal data has been updated successfully",
+      "label": "Continue"
+    }
+  },
+  "continue": "Continue"
+}
