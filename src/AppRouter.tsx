@@ -6,15 +6,14 @@ import { history } from 'utils/history';
 import { Home } from 'pages/home';
 
 export const AppRoutes: React.FunctionComponent = () => {
-  console.log('AppRoutes');
   return (
-  <ConnectedRouter history={history}>
-    <Main>
-      <Switch>
-        <Route path="/home" component={Home} />
-        <Redirect from="*" to="/home" />
-      </Switch>
-    </Main>
-  </ConnectedRouter>
-);
-}
+    <ConnectedRouter history={history}>
+      <Main>
+        <Switch>
+          <Route path="/home" component={Home} />
+          <Redirect from="*" to="/home" />
+        </Switch>
+      </Main>
+    </ConnectedRouter>
+  );
+};

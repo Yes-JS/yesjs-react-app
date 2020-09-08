@@ -43,10 +43,6 @@ declare global {
 export const Main: React.FunctionComponent<IMain> = ({ children }: IMain) => {
   const classes = useStyles();
 
-  React.useEffect(() => {
-    console.log('main component here')
-  }, []);
-
   return (
     <div className={`${classes.main} ${classes.flexColumn}`}>
       <Header />

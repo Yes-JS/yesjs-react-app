@@ -5,17 +5,18 @@ import {
   connect,
   disconnect,
   socketMessage,
-  getPosts,
-  addCombination,
+  testGet,
+  testPost,
+  socketUpdate,
 } from './index';
 
 const WEBSOCKET = process.env.REACT_APP_BASE_WEBSOCKET || '';
 
-function watchMessages(socket: Socket<unknown>, betSlipId: string) {
+function watchMessages(socket: Socket<unknown>, payload: string) {
   return eventChannel((emitter) => {
     socket.add('SOCKET_CONNECTED', () => {
       socket.sendMessage({
-        betSlipId,
+        payload,
       });
     });
     socket.add('SOCKET_MESSAGE', emitter);
@@ -25,9 +26,9 @@ function watchMessages(socket: Socket<unknown>, betSlipId: string) {
   });
 }
 
-function handleBetslipChanges(socket: Socket<unknown>, betSlipId: string) {
+function sendSocketMessage(socket: Socket<unknown>, payload: string) {
   socket.sendMessage({
-    betSlipId,
+    payload,
   });
 }
 
@@ -38,23 +39,23 @@ function* handleConnect({ payload }: any) {
 
   const socketChannel = yield call(watchMessages, socket, payload);
 
-  yield takeEvery(
-    [
-      getPosts.fulfilled,
-      addCombination.fulfilled,
-      socketMessage,
-    ],
-    () => handleBetslipChanges(socket, payload),
+  yield takeEvery([testGet.fulfilled, testPost.fulfilled], () =>
+    sendSocketMessage(socket, payload),
   );
 
   while (true) {
-    const { message, cancel } = yield race({
-      message: take(socketChannel),
-      cancel: take(disconnect)
+    const { messageFromSocket, messageToSocket, cancel } = yield race({
+      messageFromSocket: take(socketChannel),
+      messageToSocket: take(socketMessage),
+      cancel: take(disconnect),
     });
 
     if (cancel) {
       socketChannel.close();
+    } else if (messageFromSocket) {
+      yield put(socketUpdate(messageFromSocket.payload));
+    } else if (messageToSocket) {
+      sendSocketMessage(socket, 'test message to socket');
     }
   }
 }
