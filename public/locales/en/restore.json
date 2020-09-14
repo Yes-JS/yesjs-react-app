@@ -1,9 +1,0 @@
-{
-  "header": "Restore password",
-  "continue": "Continue",
-  "cancel": "Cancel",
-  "success": "Success!",
-  "new_password": "New password is sent to your email",
-  "all_attemps": "Sorry, your account is still locked",
-  "locked_for_30_minutes": "Your account is locked for 30 minutes. Please, try again later."
-}
