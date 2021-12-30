@@ -12,6 +12,12 @@ const Participate = () => {
 			<span className={styles.subtitle}>
 				{`${t('participate_subtitle_first')}`}
 				&nbsp;
+				<a href={process.env.APP_ISSUE_LINK} target="_blank" rel="noreferrer">
+					{`${t('create_an_issue')}`}
+				</a>
+				&nbsp;
+				{`${t('or_even')}`}
+				&nbsp;
 				<a
 					href={process.env.APP_PULL_REQUEST_LINK}
 					target="_blank"
