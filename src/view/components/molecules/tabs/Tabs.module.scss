@@ -1,0 +1,33 @@
+.tabsWrapper {
+	height: 100%;
+	width: max-content;
+	position: relative;
+
+	.tabsGrid {
+		height: 100%;
+		width: 100%;
+		display: grid;
+		grid-auto-flow: column;
+		grid-auto-columns: 1fr;
+		justify-items: center;
+		align-items: center;
+	}
+
+	.tabsIndicator {
+		--indicatorWidth: calc((100% / var(--tabsCount)) - 20px);
+		--oneTabWidth: calc(100% / var(--tabsCount));
+		--offsetToAlignIndicatorInTab: calc(
+			var(--oneTabWidth) / 2 - var(--indicatorWidth) / 2
+		);
+		height: 4px;
+		width: var(--indicatorWidth);
+		background: var(--color-prymary-main);
+		position: absolute;
+		bottom: 0;
+		left: calc(
+			(var(--oneTabWidth) * var(--activeTabIndex)) +
+				var(--offsetToAlignIndicatorInTab)
+		);
+		transition: left 0.2s;
+	}
+}

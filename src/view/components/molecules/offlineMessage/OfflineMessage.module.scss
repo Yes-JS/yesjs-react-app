@@ -1,0 +1,46 @@
+.wrapper {
+	box-sizing: border-box;
+	color: var(--color-text-contrast);
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	padding: var(--spacing-L);
+	background: var(--color-background-main);
+	height: 500px;
+	align-self: center;
+	width: 100%;
+	max-width: 650px;
+	justify-self: center;
+	border-radius: 10px;
+	position: relative;
+	overflow: hidden;
+
+	h1 {
+		color: var(--color-text-contrast);
+		font-size: var(--font-size-XL);
+		font-weight: bold;
+		margin: 0 0 var(--spacing-M) 0;
+	}
+
+	h4 {
+		color: var(--color-text-contrast-secondary);
+		font-size: var(--font-size-S);
+		font-weight: normal;
+		line-height: 1.5;
+		margin: 0 0 var(--spacing-XXL) 0;
+	}
+
+	.okButton {
+		height: 56px;
+	}
+
+	@media (max-width: 768px) {
+		h1 {
+			font-size: var(--font-size-L);
+		}
+
+		h4 {
+			margin: 0 0 var(--spacing-XL) 0;
+		}
+	}
+}

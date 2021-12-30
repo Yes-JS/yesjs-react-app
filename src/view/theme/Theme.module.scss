@@ -1,0 +1,49 @@
+.common {
+	--footer-height: 20px;
+	--header-height: 50px;
+	--content-area-width: 1200px;
+
+	--color-prymary-main: #f60257;
+	--color-prymary-light: #757ce8;
+	--color-prymary-dark: #002884;
+	--color-secondary-main: #f44336;
+	--color-secondary-light: #ff7961;
+	--color-secondary-dark: #ba000d;
+	--color-success-main: #388e3c;
+	--color-text-light: #fff;
+	--color-text-dark: #000;
+
+	--font-size-XXL: 96px;
+	--font-size-XL: 64px;
+	--font-size-L: 32px;
+	--font-size-M: 24px;
+	--font-size-S: 16px;
+
+	--spacing-XXL: 64px;
+	--spacing-XL: 32px;
+	--spacing-L: 24px;
+	--spacing-M: 16px;
+	--spacing-S: 8px;
+
+	--outline-focus: 2px solid var(--color-prymary-main);
+}
+
+.dark {
+	--color-text-contrast: #fff;
+	--color-text-contrast-secondary: #a6a6a6;
+	--color-outline-active: #adadad;
+	--color-outline-main: #767676;
+	--color-background-main: #424242;
+	--color-background-dark: #2b2b2b;
+	--color-background-transparent: #2b2b2b78;
+}
+
+.light {
+	--color-text-contrast: #212121;
+	--color-text-contrast-secondary: #6a6a6a;
+	--color-outline-active: #666666;
+	--color-outline-main: #ababab;
+	--color-background-main: #ffffff;
+	--color-background-dark: #e1e1e1;
+	--color-background-transparent: #2b2b2b78;
+}

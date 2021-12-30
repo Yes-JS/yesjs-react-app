@@ -1,0 +1,22 @@
+.button {
+	color: var(--color-text-contrast);
+	outline: none;
+	cursor: pointer;
+	font-size: var(--font-size-S);
+	border: 1px solid var(--color-outline-main);
+	border-radius: 5px;
+	background: var(--color-background-dark);
+	padding: 0 var(--spacing-M);
+	transition: border 0.2s;
+	-webkit-tap-highlight-color: transparent;
+	min-width: 80px;
+	height: 40px;
+
+	&:hover {
+		border: 1px solid var(--color-outline-active);
+	}
+
+	&:focus-visible {
+		outline: var(--outline-focus);
+	}
+}

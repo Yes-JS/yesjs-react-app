@@ -1,0 +1,50 @@
+.wrapper {
+	align-self: center;
+	color: var(--color-text-contrast);
+	display: grid;
+	grid-gap: var(--spacing-XL);
+	grid-auto-rows: max-content;
+	align-content: space-around;
+	justify-self: center;
+	box-sizing: border-box;
+	border: 2px dashed var(--color-outline-main);
+	border-radius: 10px;
+	padding: var(--spacing-M);
+	height: max-content;
+	width: 100%;
+
+	span {
+		display: block;
+		font-size: var(--font-size-M);
+		font-weight: bold;
+	}
+
+	a {
+		color: var(--color-prymary-main);
+
+		&:focus-visible {
+			outline: var(--outline-focus);
+		}
+	}
+
+	.marginTop8 {
+		margin-top: var(--spacing-S);
+	}
+
+	.active {
+		background: var(--color-prymary-main);
+		color: var(--color-text-light);
+	}
+
+	.leftButton {
+		border-radius: 5px 0 0 5px;
+	}
+
+	.rightButton {
+		border-radius: 0 5px 5px 0;
+	}
+
+	.crashButton {
+		width: max-content;
+	}
+}
