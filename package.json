@@ -6,7 +6,6 @@
   "scripts": {
     "start": "webpack serve --config webpack/webpack.config.js --env stand=local",
     "build": "webpack --config webpack/webpack.config.js --env stand=dev",
-    "build:rc": "webpack --config webpack/webpack.config.js --env stand=rc",
     "build:prod": "webpack --config webpack/webpack.config.js --env stand=prod",
     "build:analize": "webpack --config webpack/webpack.config.js --env stand=analize",
     "serveBuild": "npx serve build",
@@ -17,8 +16,6 @@
   "author": "Evgeny Kirichuk",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.24.0",
-    "history": "^5.1.0",
     "i18next": "^17.0.0",
     "i18next-browser-languagedetector": "^4.3.1",
     "i18next-xhr-backend": "^3.2.2",
@@ -27,7 +24,6 @@
     "react-dom": "17.0.2",
     "react-i18next": "^11.13.0",
     "react-router-dom": "^6.0.2",
-    "reselect": "^4.0.0",
     "workbox-cacheable-response": "^6.3.0",
     "workbox-core": "^6.3.0",
     "workbox-expiration": "^6.3.0",
@@ -46,7 +42,6 @@
     "@types/react": "17.0.19",
     "@types/react-dom": "17.0.9",
     "@types/react-router-dom": "^5.3.2",
-    "@types/reselect": "^2.2.0",
     "@typescript-eslint/eslint-plugin": "4.30.0",
     "@typescript-eslint/parser": "4.30.0",
     "babel-loader": "8.2.2",
