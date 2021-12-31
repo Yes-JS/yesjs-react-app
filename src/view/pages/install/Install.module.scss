@@ -3,22 +3,23 @@
 	height: 100%;
 	width: 100%;
 	display: grid;
-	grid-template-rows: max-content max-content 56px;
+	grid-template-rows: max-content max-content max-content;
 	grid-template-columns: 1fr;
-	grid-gap: 30px;
 	justify-content: center;
 	align-content: center;
 
 	.title {
 		font-size: clamp(var(--font-size-L), 7vw, var(--font-size-XXL));
 		font-weight: bold;
+		line-height: var(--line-height-S);
 	}
 
 	.subtitle {
-		font-size: var(--font-size-S);
-		line-height: 1.5;
+		font-size: var(--font-size-XS);
+		line-height: var(--line-height-M);
 		max-width: 550px;
 		color: var(--color-text-contrast-secondary);
+		margin-top: var(--spacing-S);
 
 		a {
 			color: var(--color-prymary-main);
@@ -39,7 +40,8 @@
 		overflow: hidden;
 		padding: 0 10px;
 		width: 100%;
-		height: auto;
+		height: 56px;
+		margin-top: var(--spacing-L);
 
 		pre {
 			color: var(--color-text-contrast);
@@ -49,7 +51,7 @@
 		}
 
 		code {
-			font-size: var(--font-size-S);
+			font-size: var(--font-size-XS);
 		}
 
 		::-webkit-scrollbar {
@@ -67,7 +69,7 @@
 	}
 
 	.copyIcon {
-		width: 18px;
+		width: 24px;
 
 		path {
 			fill: var(--color-prymary-main);
@@ -75,7 +77,7 @@
 	}
 
 	.copiedIcon {
-		width: 18px;
+		width: 24px;
 
 		path {
 			fill: var(--color-success-main);

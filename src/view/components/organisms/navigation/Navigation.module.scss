@@ -10,6 +10,7 @@ nav {
 	margin: 0 5px;
 	opacity: 0.8;
 	transition: opacity 0.2s;
+	padding: 0 var(--spacing-S);
 
 	&:hover {
 		border: none;

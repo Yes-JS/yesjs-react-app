@@ -2,7 +2,7 @@
 	background: var(--color-background-dark);
 	box-sizing: border-box;
 	position: fixed;
-	top: 0px;
+	top: 0;
 	padding: 0 var(--spacing-M);
 	height: 50px;
 	width: 100%;
@@ -24,9 +24,16 @@
 		border-radius: 5px;
 		font-size: var(--font-size-M);
 		font-weight: bold;
-		color: var(--color-prymary-main);
 		text-decoration: none;
 		user-select: none;
+
+		.y {
+			color: var(--color-prymary-main);
+		}
+
+		.js {
+			color: var(--color-text-contrast);
+		}
 
 		&:focus-visible {
 			outline: var(--outline-focus);

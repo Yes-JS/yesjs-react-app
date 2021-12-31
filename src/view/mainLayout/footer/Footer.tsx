@@ -3,7 +3,6 @@ import React from 'react';
 import styles from './Footer.module.scss';
 
 export const Footer: React.FC = () => {
-	console.log(process.env.APP_AUTHOR_LINK);
 	return (
 		<footer className={styles.footerWrapper}>
 			<span className={styles.author}>

@@ -6,7 +6,7 @@
 	height: 100vh;
 	width: 100%;
 	display: grid;
-	grid-template-rows: max-content max-content 56px;
+	grid-template-rows: max-content max-content;
 	grid-template-columns: 1fr;
 	justify-content: center;
 	align-content: center;
@@ -15,7 +15,5 @@
 }
 
 .okButton {
-	font-size: var(--font-size-M);
 	width: 200px;
-	height: auto;
 }

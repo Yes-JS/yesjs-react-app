@@ -9,7 +9,8 @@ export const Header: React.FC = () => {
 		<header className={styles.headerWrapper}>
 			<div className={styles.headerItems}>
 				<a className={styles.logoLink} href=".">
-					YJS
+					<span className={styles.y}>Y</span>
+					<span className={styles.js}>JS</span>
 				</a>
 				<ThemeSwitch className={styles.switchStyle} />
 			</div>

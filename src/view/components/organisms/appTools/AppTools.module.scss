@@ -2,25 +2,28 @@
 	align-self: center;
 	color: var(--color-text-contrast);
 	display: grid;
-	grid-gap: var(--spacing-XL);
+	grid-gap: var(--spacing-L);
 	grid-auto-rows: max-content;
 	align-content: space-around;
 	justify-self: center;
 	box-sizing: border-box;
 	border: 2px dashed var(--color-outline-main);
 	border-radius: 10px;
-	padding: var(--spacing-M);
+	padding: var(--spacing-XL);
 	height: max-content;
 	width: 100%;
 
 	span {
 		display: block;
-		font-size: var(--font-size-M);
+		font-size: var(--font-size-S);
 		font-weight: bold;
 	}
 
 	a {
+		display: block;
+		font-size: var(--font-size-XS);
 		color: var(--color-prymary-main);
+		margin-top: var(--spacing-L);
 
 		&:focus-visible {
 			outline: var(--outline-focus);
@@ -46,5 +49,9 @@
 
 	.crashButton {
 		width: max-content;
+	}
+
+	@media (max-width: 768px) {
+		padding: var(--spacing-L);
 	}
 }
