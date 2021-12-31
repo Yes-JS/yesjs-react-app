@@ -21,8 +21,6 @@ Where `my-app` is your new app name.
 
 ## Local Set Up
 
-After cloning the forked repository:
-
 ```
 cd /my-app
 npm install
@@ -31,14 +29,12 @@ npm run start
 
 ## Build the app
 
-After cloning the forked repository:
-
 ```
 npm run build       //to make dev build
 npm run build:prod  //to make production build
 ```
 
-### Creating Pull Requests
+## Creating Pull Requests
 
 To create a pull request, push changes from your local branch to your forked repository. You can then create a pull request from your forked repository to the main repository.
 
