@@ -22,8 +22,8 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: eu-central-1
       - name: Install dependencies
-      - run: npm install
+        run: npm install
       - name: Build
-      - run: npm run build:prod
+        run: npm run build:prod
       - name: Deploy
         run: aws s3 sync ./build s3://${{ secrets.AWS_S3_BUCKET }}
