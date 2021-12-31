@@ -1,0 +1,93 @@
+.wrapper {
+	color: var(--color-text-contrast);
+	height: 100%;
+	width: 100%;
+	display: grid;
+	grid-template-rows: max-content max-content max-content;
+	grid-template-columns: 1fr;
+	justify-content: center;
+	align-content: center;
+
+	.title {
+		font-size: clamp(var(--font-size-L), 7vw, var(--font-size-XXL));
+		font-weight: bold;
+		line-height: var(--line-height-S);
+	}
+
+	.subtitle {
+		font-size: var(--font-size-XS);
+		line-height: var(--line-height-M);
+		max-width: 550px;
+		color: var(--color-text-contrast-secondary);
+		margin-top: var(--spacing-S);
+
+		a {
+			color: var(--color-prymary-main);
+			line-height: 16px;
+
+			&:focus-visible {
+				outline: var(--outline-focus);
+			}
+		}
+	}
+
+	.commandWrapper {
+		display: grid;
+		align-items: center;
+		justify-items: center;
+		grid-template-columns: 1fr 40px;
+		grid-template-rows: 100%;
+		overflow: hidden;
+		padding: 0 10px;
+		width: 100%;
+		height: 56px;
+		margin-top: var(--spacing-L);
+
+		pre {
+			color: var(--color-text-contrast);
+			margin: 0;
+			width: 100%;
+			overflow: auto;
+		}
+
+		code {
+			font-size: var(--font-size-XS);
+		}
+
+		::-webkit-scrollbar {
+			height: 6px;
+		}
+
+		::-webkit-scrollbar-track {
+			background: var(--color-background-main);
+		}
+
+		::-webkit-scrollbar-thumb {
+			background: var(--color-prymary-main);
+			border-radius: 10px;
+		}
+	}
+
+	.copyIcon {
+		width: 24px;
+
+		path {
+			fill: var(--color-prymary-main);
+		}
+	}
+
+	.copiedIcon {
+		width: 24px;
+
+		path {
+			fill: var(--color-success-main);
+		}
+	}
+
+	@media (max-width: 768px) {
+		grid-gap: 50px;
+		.title {
+			font-size: clamp(var(--font-size-L), 8vw, var(--font-size-XL));
+		}
+	}
+}

@@ -1,0 +1,46 @@
+.headerWrapper {
+	background: var(--color-background-dark);
+	box-sizing: border-box;
+	position: fixed;
+	top: 0;
+	padding: 0 var(--spacing-M);
+	height: 50px;
+	width: 100%;
+	z-index: 1;
+
+	.headerItems {
+		display: grid;
+		grid-template-columns: max-content max-content;
+		justify-content: space-between;
+		align-items: center;
+		justify-items: center;
+		height: 100%;
+		max-width: var(--content-area-width);
+		margin: auto;
+	}
+
+	.logoLink {
+		box-sizing: border-box;
+		border-radius: 5px;
+		font-size: var(--font-size-M);
+		font-weight: bold;
+		text-decoration: none;
+		user-select: none;
+
+		.y {
+			color: var(--color-prymary-main);
+		}
+
+		.js {
+			color: var(--color-text-contrast);
+		}
+
+		&:focus-visible {
+			outline: var(--outline-focus);
+		}
+	}
+
+	nav {
+		height: 100%;
+	}
+}

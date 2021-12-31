@@ -1,0 +1,43 @@
+{
+    "install_title": "React шаблон от дэвов для дэвов.",
+    "install_subtitle": "предоставляет оптимизированное, хорошо структурированное и легко масштабируемое react приложение с многими инструментами и лучшими практиками для запуска вашего проекта как можно быстрее.",
+    "participate_title": "Повлияй на развитие проекта \uD83D\uDE42",
+    "participate_subtitle_first": "Если у вас есть идея, как сделать этот шаблон лучше, или вы нашли ошибку, пожалуйста,",
+    "participate_subtitle_second": ", и мы вместе решим, как развивать проект дальше.",
+    "make_pull_request": "создайте pull request",
+    "or_even": "или даже",
+    "create_an_issue": "заведите issue",
+    "break_the_app": "Сломать прилоежение",
+    "crash_message": "Что-то сломалось",
+    "return": "Назад",
+    "no_internet_connection": "Нет интернета",
+    "check_your_internet_connection": "Проверьте ваше интернет-соединение",
+    "okay": "Хорошо",
+    "tools": {
+        "routing_title": "Роутинг",
+        "routing_install": "Установить",
+        "routing_participate": "Участвовать",
+        "crash_title": "Экран предохранитель",
+        "crash_button_text": "Сломать приложение",
+        "internationalization_title": "Мультиязычность",
+        "internationalization_ru": "ru",
+        "internationalization_eng": "eng",
+        "pwa_title": "Базовый PWA конфиг",
+        "theming_title": "Темизация",
+        "internet_connection_handler": "Экран \"Нет интернета\"",
+        "lighthouse_title": "Зелёный Lighthouse",
+        "read_more": "Читать больше"
+    },
+    "aria-label": {
+        "home_link": "открыть главную страницу",
+        "theme_switcher": "сменить цветовую схему",
+        "copy_install": "копировать команду установки",
+        "command_copied": "команда скопирована в буфер обмена",
+        "navigate_to_install": "перейти к странице установки",
+        "navigate_to_participate": "перейти к странице о участии в проекте",
+        "change_language_to_ru": "сменить язык на русский",
+        "change_language_to_eng": "сменить язык на английский",
+        "link_to_article": "открыть статью о этом приложении на медиуме",
+        "author_link": "открыть github автора"
+    }
+}

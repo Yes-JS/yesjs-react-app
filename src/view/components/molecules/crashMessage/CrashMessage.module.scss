@@ -1,0 +1,19 @@
+.wrapper {
+	border-radius: 0;
+	box-sizing: border-box;
+	background: var(--color-background-main);
+	color: var(--color-text-contrast);
+	height: 100vh;
+	width: 100%;
+	display: grid;
+	grid-template-rows: max-content max-content;
+	grid-template-columns: 1fr;
+	justify-content: center;
+	align-content: center;
+	justify-items: center;
+	padding: 15px;
+}
+
+.okButton {
+	width: 200px;
+}

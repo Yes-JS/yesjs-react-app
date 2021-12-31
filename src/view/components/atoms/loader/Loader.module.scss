@@ -1,0 +1,56 @@
+.contentLoader {
+	background: var(--color-outline-main);
+	animation: contentLoaderAnimation 3s ease infinite;
+	height: 100%;
+	width: 100%;
+
+	@keyframes contentLoaderAnimation {
+		0% {
+			opacity: 0.3;
+		}
+		50% {
+			opacity: 0.05;
+		}
+		100% {
+			opacity: 0.3;
+		}
+	}
+}
+
+.fullscreenLoader {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.dot {
+		min-width: 8px;
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		background: #eee;
+		margin: 2px;
+	}
+	.firstDot {
+		animation: dot1 1.4s infinite both;
+	}
+	.secondDot {
+		animation: dot1 1.4s infinite both;
+		animation-delay: 0.2s;
+	}
+	.thirdDot {
+		animation: dot1 1.4s infinite both;
+		animation-delay: 0.4s;
+	}
+
+	@keyframes dot1 {
+		0% {
+			background: var(--color-prymary-main);
+		}
+		50% {
+			background: var(--color-outline-active);
+		}
+		100% {
+			background: var(--color-prymary-main);
+		}
+	}
+}

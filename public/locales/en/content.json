@@ -1,0 +1,42 @@
+{
+    "install_title": "The React boilerplate from devs to devs.",
+    "install_subtitle": "provides optimized, well structured, and easy to scale react app with many tools and best practices to start your project as fast as possible.",
+    "participate_title": "Make an impact on the project's future \uD83D\uDE42",
+    "participate_subtitle_first": "If you have an idea how to make this boilerplate better or you find a bug, please",
+    "participate_subtitle_second": "and we will decide together how to develop the project further.",
+    "make_pull_request": "create a pull request",
+    "or_even": "or even",
+    "create_an_issue": "create an issue",
+    "crash_message": "Something went wrong",
+    "return": "Return",
+    "no_internet_connection": "No internet connection",
+    "check_your_internet_connection": "Please check your internet connection and try again",
+    "okay": "Okay",
+    "tools": {
+        "routing_title": "Routing",
+        "routing_install": "Install",
+        "routing_participate": "Participate",
+        "crash_title": "Crash screen",
+        "crash_button_text": "Crash the app",
+        "internationalization_title": "Internationalization",
+        "internationalization_ru": "ru",
+        "internationalization_eng": "eng",
+        "pwa_title": "Basic PWA setup",
+        "theming_title": "Theming",
+        "internet_connection_handler": "\"No internet\" screen",
+        "lighthouse_title": "Green Lighthouse based",
+        "read_more": "Read more"
+    },
+    "aria_label": {
+        "home_link": "open root page",
+        "theme_switcher": "change color scheme",
+        "copy_install": "copy install command",
+        "command_copied": "command is copied to the clipboard",
+        "navigate_to_install": "navigate to install page",
+        "navigate_to_participate": "navigate to participate page",
+        "change_language_to_ru": "change the language to russian",
+        "change_language_to_eng": "change the language to english",
+        "link_to_article": "open the medium article about the app",
+        "author_link": "open author github"
+    }
+}

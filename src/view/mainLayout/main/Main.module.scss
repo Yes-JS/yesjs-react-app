@@ -1,0 +1,43 @@
+.mainWrapper {
+	background: var(--color-background-main);
+	width: 100%;
+	min-height: 100vh;
+	border-radius: 0;
+	display: grid;
+	grid-template-rows: 1fr var(--footer-height);
+	padding-top: var(--header-height);
+	grid-template-columns: 100%;
+	overflow-x: hidden;
+	box-sizing: border-box;
+
+	--gap-beetween-columns: var(--spacing-XXL);
+	--rigth-column-width: 350px;
+	--left-column-width: calc(
+		var(--content-area-width) - var(--rigth-column-width) -
+			var(--gap-beetween-columns)
+	);
+
+	.content {
+		display: grid;
+		grid-gap: var(--gap-beetween-columns);
+		grid-template-columns: minmax(250px, var(--left-column-width)) var(
+				--rigth-column-width
+			);
+		grid-template-rows: 1fr;
+		justify-content: center;
+		align-content: center;
+		padding: var(--spacing-M);
+
+		.routesWrapper {
+			align-self: center;
+			box-sizing: border-box;
+			height: max-content;
+		}
+
+		@media (max-width: 768px) {
+			grid-template-columns: minmax(250px, 650px);
+			grid-template-rows: minmax(400px, 50vh) max-content;
+			align-content: start;
+		}
+	}
+}
