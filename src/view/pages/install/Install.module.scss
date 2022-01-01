@@ -19,7 +19,7 @@
 		line-height: var(--line-height-M);
 		max-width: 550px;
 		color: var(--color-text-contrast-secondary);
-		margin-top: var(--spacing-S);
+		margin-top: var(--spacing-M);
 
 		a {
 			color: var(--color-prymary-main);
@@ -41,7 +41,7 @@
 		padding: 0 10px;
 		width: 100%;
 		height: 56px;
-		margin-top: var(--spacing-L);
+		margin-top: var(--spacing-XL);
 
 		pre {
 			color: var(--color-text-contrast);
@@ -85,9 +85,12 @@
 	}
 
 	@media (max-width: 768px) {
-		grid-gap: 50px;
 		.title {
 			font-size: clamp(var(--font-size-L), 8vw, var(--font-size-XL));
+		}
+
+		.subtitle {
+			margin-top: var(--spacing-L);
 		}
 	}
 }
