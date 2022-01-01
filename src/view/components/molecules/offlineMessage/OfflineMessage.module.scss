@@ -20,6 +20,7 @@
 		font-size: var(--font-size-XL);
 		font-weight: bold;
 		margin: 0 0 var(--spacing-M) 0;
+		line-height: var(--line-height-S);
 	}
 
 	h4 {
@@ -27,11 +28,12 @@
 		font-size: var(--font-size-XS);
 		font-weight: normal;
 		line-height: 1.5;
-		margin: 0 0 var(--spacing-XXL) 0;
+		margin: 0 0 var(--spacing-XL) 0;
 	}
 
 	.okButton {
-		height: 56px;
+		width: 180px;
+		justify-self: center;
 	}
 
 	@media (max-width: 768px) {
