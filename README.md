@@ -1,4 +1,4 @@
-# Yes-js-react-app
+# Yesjs-react-app
 
 ## Features
 
