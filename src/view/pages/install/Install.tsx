@@ -12,7 +12,7 @@ const Install = () => {
 	const [isCopied, setIsCopied] = useState(false);
 
 	const command =
-		'npx degit https://github.com/evgeny-kirichuk/yesjs-react-app.git my-app';
+		'npx degit https://github.com/evgeny-kirichuk/yesjs-react-app my-app';
 
 	const copyCommand = () => {
 		navigator.clipboard.writeText(command).then(
