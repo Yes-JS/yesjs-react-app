@@ -14,7 +14,7 @@
 To start a new project using this template run the following command:
 
 ```
-npx degit https://github.com/evgeny-kirichuk/yes-js-react-app my-app
+npx degit https://github.com/evgeny-kirichuk/yesjs-react-app my-app
 ```
 
 Where `my-app` is your new app name.
