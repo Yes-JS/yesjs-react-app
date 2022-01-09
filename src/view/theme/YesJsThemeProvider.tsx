@@ -15,7 +15,9 @@ export const ThemeContext = createContext<ThemeContext>({
 export const YesJsThemeProvider: React.FC<
 	React.HTMLAttributes<HTMLDivElement>
 > = ({ children, className, ...props }) => {
-	const systemIsDark = window.matchMedia('(prefers-color-scheme: dark').matches;
+	const systemIsDark = window.matchMedia(
+		'(prefers-color-scheme: dark)'
+	).matches;
 	const systemThemeMode = systemIsDark ? 'dark' : 'light';
 	const storedTheme = JSON.parse(
 		String(localStorage.getItem('yesjsThemeSettings'))
