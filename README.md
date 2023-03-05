@@ -11,11 +11,16 @@ npx degit https://github.com/evgeny-kirichuk/yesjs-react-app app-name
 
 Where `app-name` is your new app name.
 
-### Step 2: Install the dependencies
+### Step 2: Install the dependencies:
 
 ```
 cd /my-app
 npm install
+```
+
+### Step 3: Run the project:
+
+```
 npm run start
 ```
 
