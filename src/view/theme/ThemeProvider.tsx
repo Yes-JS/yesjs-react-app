@@ -1,7 +1,10 @@
-import React, { createContext, useContext, useEffect, useState } from 'react';
-import cn from 'classnames';
-
-import themeStyles from './Theme.module.scss';
+import React, {
+	ReactElement,
+	createContext,
+	useContext,
+	useEffect,
+	useState,
+} from 'react';
 
 interface ThemeContext {
 	currentTheme: string;
@@ -12,16 +15,14 @@ export const ThemeContext = createContext<ThemeContext>({
 	toggleTheme: () => undefined,
 });
 
-export const YesJsThemeProvider: React.FC<
-	React.HTMLAttributes<HTMLDivElement>
-> = ({ children, className, ...props }) => {
+export const ThemeProvider: React.FC<{ children: ReactElement }> = ({
+	children,
+}) => {
 	const systemIsDark = window.matchMedia(
 		'(prefers-color-scheme: dark)'
 	).matches;
 	const systemThemeMode = systemIsDark ? 'dark' : 'light';
-	const storedTheme = JSON.parse(
-		String(localStorage.getItem('yesjsThemeSettings'))
-	);
+	const storedTheme = JSON.parse(String(localStorage.getItem('themeSettings')));
 	const shouldApplyStoredTheme =
 		(new Date().getTime() - storedTheme?.themeSettingUpTime) / 1000 / 60 / 60 <
 		12;
@@ -48,9 +49,19 @@ export const YesJsThemeProvider: React.FC<
 		};
 	}, []);
 
+	useEffect(() => {
+		if (themeName === 'dark') {
+			document.body.classList.remove('light');
+			document.body.classList.add('dark');
+		} else {
+			document.body.classList.remove('dark');
+			document.body.classList.add('light');
+		}
+	}, [themeName]);
+
 	const toggleTheme = () => {
 		localStorage.setItem(
-			'yesjsThemeSettings',
+			'themeSettings',
 			JSON.stringify({
 				themeMode: themeName === 'dark' ? 'light' : 'dark',
 				themeSettingUpTime: new Date().getTime(),
@@ -66,17 +77,11 @@ export const YesJsThemeProvider: React.FC<
 
 	return (
 		<ThemeContext.Provider value={contextValue}>
-			<div
-				className={cn(themeStyles.common, themeStyles[themeName], className)}
-				{...props}
-			>
-				{children}
-			</div>
+			{children}
 		</ThemeContext.Provider>
 	);
 };
 
 export const useTheme = () => {
-	const store = useContext(ThemeContext);
-	return store;
+	return useContext(ThemeContext);
 };

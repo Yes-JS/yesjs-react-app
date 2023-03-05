@@ -1,7 +1,7 @@
 import React from 'react';
 import cn from 'classnames';
 
-import { useTheme } from '~theme/YesJsThemeProvider';
+import { useTheme } from '~theme/ThemeProvider';
 
 import styles from './ThemeSwitch.module.scss';
 

@@ -1,1 +1,1 @@
-export * from './YesJsThemeProvider';
+export * from './ThemeProvider';

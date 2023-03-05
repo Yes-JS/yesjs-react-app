@@ -42,11 +42,12 @@ const Install = () => {
 				&nbsp;
 				{`${t('install_subtitle')}`}
 			</span>
+
 			<Button
 				aria-label={
 					isCopied
-						? t('aria_label.command_copied')
-						: t('aria_label.copy_install')
+						? (t('aria_label.command_copied') as string)
+						: (t('aria_label.copy_install') as string)
 				}
 				className={styles.commandWrapper}
 				onClick={copyCommand}

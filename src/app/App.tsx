@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ViewEntrypoint from '~view/viewEntrypoint';
+import ViewEntrypoint from '~view/ViewEntrypoint';
 
 const App = () => {
 	return <ViewEntrypoint />;
