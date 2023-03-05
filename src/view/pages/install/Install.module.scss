@@ -35,8 +35,9 @@
 		display: grid;
 		align-items: center;
 		justify-items: center;
-		grid-template-columns: 1fr 40px;
+		grid-template-columns: 1fr max-content;
 		grid-template-rows: 100%;
+		grid-gap: var(--spacing-S);
 		overflow: hidden;
 		padding: 0 10px;
 		width: 100%;

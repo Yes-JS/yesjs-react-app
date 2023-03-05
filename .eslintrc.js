@@ -20,34 +20,37 @@ module.exports = {
 					['~view/*', path.resolve(__dirname, 'src/view/*')],
 					['~atoms', path.resolve(__dirname, 'src/view/components/atoms')],
 					['~atoms/*', path.resolve(__dirname, 'src/view/components/atoms/*')],
-					['~molecules', path.resolve(__dirname, 'src/view/components/molecules')],
-					['~molecules/*', path.resolve(__dirname, 'src/view/components/molecules/*')],
-					['~organisms', path.resolve(__dirname, 'src/view/components/organisms')],
-					['~organisms/*', path.resolve(__dirname, 'src/view/components/organisms/*')],
-					['~wrappers', path.resolve(__dirname, 'src/view/components/wrappers')],
-					['~wrappers/*', path.resolve(__dirname, 'src/view/components/wrappers/*')],
-					['~hooks', path.resolve(__dirname, 'src/view/hooks')],
-					['~hooks/*', path.resolve(__dirname, 'src/view/hooks/*')],
+					[
+						'~molecules',
+						path.resolve(__dirname, 'src/view/components/molecules'),
+					],
+					[
+						'~molecules/*',
+						path.resolve(__dirname, 'src/view/components/molecules/*'),
+					],
+					[
+						'~organisms',
+						path.resolve(__dirname, 'src/view/components/organisms'),
+					],
+					[
+						'~organisms/*',
+						path.resolve(__dirname, 'src/view/components/organisms/*'),
+					],
+					['~layouts', path.resolve(__dirname, 'src/view/components/layouts')],
+					[
+						'~layouts/*',
+						path.resolve(__dirname, 'src/view/components/layouts/*'),
+					],
 					['~icons', path.resolve(__dirname, 'src/view/icons')],
 					['~icons/*', path.resolve(__dirname, 'src/view/icons/*')],
-					['~mainLayout', path.resolve(__dirname, 'src/view/mainLayout')],
-					['~mainLayout/*', path.resolve(__dirname, 'src/view/mainLayout/*')],
-					['~modals', path.resolve(__dirname, 'src/view/modals')],
-					['~modals/*', path.resolve(__dirname, 'src/view/modals/*')],
 					['~pages', path.resolve(__dirname, 'src/view/pages')],
 					['~pages/*', path.resolve(__dirname, 'src/view/pages/*')],
 					['~routes', path.resolve(__dirname, 'src/view/routes')],
 					['~routes/*', path.resolve(__dirname, 'src/view/routes/*')],
 					['~theme', path.resolve(__dirname, 'src/view/theme')],
 					['~theme/*', path.resolve(__dirname, 'src/view/theme/*')],
-					['~store', path.resolve(__dirname, 'src/store')],
-					['~store/*', path.resolve(__dirname, 'src/store/*')],
 					['~utils', path.resolve(__dirname, 'src/utils')],
 					['~utils/*', path.resolve(__dirname, 'src/utils/*')],
-					['~schemas', path.resolve(__dirname, 'src/schemas')],
-					['~schemas/*', path.resolve(__dirname, 'src/schemas/*')],
-					['~slices', path.resolve(__dirname, 'src/store/slices')],
-					['~slices/*', path.resolve(__dirname, 'src/store/slices/*')],
 				],
 				extensions: ['.tsx', '.ts', '.js', '.jsx', '.json'],
 			},
@@ -77,17 +80,25 @@ module.exports = {
 			'error',
 			{
 				'newlines-between': 'always',
-				groups: ['builtin', 'external', 'internal', 'index', 'object', 'parent', 'sibling'],
+				groups: [
+					'builtin',
+					'external',
+					'internal',
+					'index',
+					'object',
+					'parent',
+					'sibling',
+				],
 				pathGroups: [
 					{
-						"pattern": "~*/**",
-						"group": "internal"
+						pattern: '~*/**',
+						group: 'internal',
 					},
 
 					{
-						"pattern": "~*",
-						"group": "internal"
-					}
+						pattern: '~*',
+						group: 'internal',
+					},
 				],
 			},
 		],
@@ -98,6 +109,6 @@ module.exports = {
 		'react/jsx-uses-react': 'off',
 		'react/react-in-jsx-scope': 'off',
 		'@typescript-eslint/explicit-module-boundary-types': 'off',
-		"jsx-a11y/click-events-have-key-events": "off",
+		'jsx-a11y/click-events-have-key-events': 'off',
 	},
-}
+};

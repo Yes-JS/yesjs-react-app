@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import ReactDOM from 'react-dom';
 import cn from 'classnames';
 
-import { YesJsThemeProvider } from '~theme';
+import { ThemeProvider } from '~theme';
 
 import styles from './Portal.module.scss';
 
 interface Props {
+	children: ReactElement;
 	display?: boolean;
 	zIndex?: number;
 	transparent?: boolean;
@@ -33,13 +34,17 @@ const Portal: React.FC<Props> = ({
 	};
 
 	return ReactDOM.createPortal(
-		<YesJsThemeProvider
-			onClick={handleWrapperClick}
-			className={cn(styles.container, transparent && styles.transparent)}
-			style={{ zIndex }}
-		>
-			{display && children}
-		</YesJsThemeProvider>,
+		<ThemeProvider>
+			<div
+				tabIndex={0}
+				role="button"
+				onClick={handleWrapperClick}
+				className={cn(styles.container, transparent && styles.transparent)}
+				style={{ zIndex }}
+			>
+				{display && children}
+			</div>
+		</ThemeProvider>,
 		rootNode
 	);
 };

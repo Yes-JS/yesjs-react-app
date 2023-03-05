@@ -1,19 +1,19 @@
 import React from 'react';
 
-import { YesJsThemeProvider } from '~theme';
+import { ThemeProvider } from '~theme';
 import OnlineStatusProvider from '~utils/OnlineStatusProvider';
 import CrashMessage from '~molecules/crashMessage/CrashMessage';
-import ErrorBoundary from '~molecules/errorBoundary/errorBoundary';
+import ErrorBoundary from '~organisms/errorBoundary/errorBoundary';
 import AppRoutes from '~routes/AppRouter';
 
 const ViewEntrypoint: React.FunctionComponent = () => {
 	return (
 		<OnlineStatusProvider>
-			<YesJsThemeProvider>
+			<ThemeProvider>
 				<ErrorBoundary errorScreen={<CrashMessage />}>
 					<AppRoutes />
 				</ErrorBoundary>
-			</YesJsThemeProvider>
+			</ThemeProvider>
 		</OnlineStatusProvider>
 	);
 };

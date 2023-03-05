@@ -1,7 +1,9 @@
 import React, { ErrorInfo, ReactElement } from 'react';
 
 interface Props {
+	children: ReactElement;
 	errorScreen: ReactElement;
+	onRecovery?: () => void;
 }
 
 interface State {
@@ -24,12 +26,17 @@ class ErrorBoundary extends React.Component<Props, State> {
 	}
 
 	render() {
-		const { children, errorScreen } = this.props;
+		const { children, errorScreen, onRecovery } = this.props;
 
 		return this.state.hasError
 			? React.cloneElement(errorScreen, {
 					click: (route: string) => {
-						window.location.href = route;
+						if (!!onRecovery) {
+							onRecovery();
+							this.setState({ hasError: false });
+						} else {
+							window.location.href = route;
+						}
 					},
 			  })
 			: children;

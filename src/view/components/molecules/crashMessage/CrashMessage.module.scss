@@ -3,7 +3,7 @@
 	box-sizing: border-box;
 	background: var(--color-background-main);
 	color: var(--color-text-contrast);
-	height: 100vh;
+	height: 100%;
 	width: 100%;
 	display: grid;
 	grid-template-rows: max-content max-content;
@@ -12,6 +12,7 @@
 	align-content: center;
 	justify-items: center;
 	padding: 15px;
+	text-align: center;
 }
 
 .okButton {

@@ -8,7 +8,7 @@ import Button from '~atoms/button/Button';
 
 import styles from './Navigation.module.scss';
 
-export const Navigation: React.FC<{ className?: string }> = ({ className }) => {
+const Navigation: React.FC<{ className?: string }> = ({ className }) => {
 	const { t } = useTranslation('content');
 	const navigate = useNavigate();
 	const location = useLocation();
@@ -58,3 +58,5 @@ export const Navigation: React.FC<{ className?: string }> = ({ className }) => {
 		</nav>
 	);
 };
+
+export default Navigation;
