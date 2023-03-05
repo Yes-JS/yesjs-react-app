@@ -33,15 +33,15 @@ npm run start
 - Crash screen.
 - Easy to scale and work with files structure.
 
-## Build the app
+# Build the app
 
 ```
 npm run build       //to make dev build
 npm run build:prod  //to make production build
 ```
 
-## Useful Links
+# Useful Links
 
--   [Article](https://medium.com/@kirichuk/7-must-have-features-for-any-react-app-10b086038d9a)
+-   [Explanatory Article](https://medium.com/@kirichuk/7-must-have-features-for-any-react-app-10b086038d9a)
 -   [Workbox](https://developers.google.com/web/tools/workbox)
 -   [i18n](https://www.i18next.com/)
